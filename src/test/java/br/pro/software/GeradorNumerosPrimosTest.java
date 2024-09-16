@@ -31,4 +31,10 @@ class GeradorNumerosPrimosTest {
     void primosAteDez() {
         Assertions.assertEquals("2, 3, 5, 7", gnp.primosAte(10));
     }
+
+    @Test
+    void primosAte50() {
+        Assertions.assertEquals("2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47",
+                gnp.primosAte(50));
+    }
 }
